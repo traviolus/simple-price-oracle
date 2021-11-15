@@ -20,6 +20,3 @@ In my opinion, this service can be improved by implementing following modules/fu
 ### Oracle contract
 - Security: access control and ownership in some methods such as `set_price` to prevent unauthorized update of the price.
 - Efficiency: implements batch or array-like `set_price` and `get_price` methods to maximize gas efficiency when writing or reading the contract state.
-
-### Off-chain service
-- pass
