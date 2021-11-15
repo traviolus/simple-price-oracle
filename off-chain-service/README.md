@@ -10,7 +10,7 @@ The service consists of two applications `feeder` and `server`
 
 This application is responsible for getting the aggregated price from the `server` to be updated on the blockchain by sending an `ExecuteMsg` transaction to the Terra wasm module.
 
-The feeder also checks for returned values from the contract, if there is no matching symbol found on the contract. It will handle this case by sending the price without checking with the price deviation rule.
+The feeder also checks for returned values from the contract. If there is no matching symbol found on the contract, it will handle this case by sending the price without checking with the price deviation rule as if it is creating a new symbol on the contract state.
 
 ### Server
 
